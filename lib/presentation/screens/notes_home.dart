@@ -117,7 +117,7 @@ class _NotesHomeState extends State<NotesHome> {
           Padding(
             padding: const EdgeInsets.only(left: 25),
             child: Text("Notes",
-              style: GoogleFonts.notoSerif(
+              style: GoogleFonts.dmSerifText(
                 textStyle: TextStyle(
                     fontSize: 48,
                     color: Theme.of(context).colorScheme.inversePrimary
