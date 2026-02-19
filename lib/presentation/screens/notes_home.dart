@@ -5,6 +5,7 @@ import 'package:docket/presentation/widgets/drawer.dart';
 import 'package:docket/presentation/widgets/note_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NotesHome extends StatefulWidget {
   const NotesHome({super.key});
@@ -92,7 +93,6 @@ class _NotesHomeState extends State<NotesHome> {
   @override
   Widget build(BuildContext context) {
     final db = context.watch<NotesDatabase>();
-
     List<Note> currentNotesInDb = db.currentNotes;
 
     return Scaffold(
@@ -117,10 +117,12 @@ class _NotesHomeState extends State<NotesHome> {
           Padding(
             padding: const EdgeInsets.only(left: 25),
             child: Text("Notes",
-              style: TextStyle(
-                fontSize: 48,
-                color: Theme.of(context).colorScheme.inversePrimary
-              ),
+              style: GoogleFonts.notoSerif(
+                textStyle: TextStyle(
+                    fontSize: 48,
+                    color: Theme.of(context).colorScheme.inversePrimary
+                ),
+              )
             ),
           ),
           Expanded(
