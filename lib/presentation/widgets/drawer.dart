@@ -12,21 +12,22 @@ class MyDrawer extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       child: Column(
         children: [
-          DrawerHeader(
+          const DrawerHeader(
               child: Icon(Icons.note)
           ),
+         //const SizedBox(height: 20),
          DrawerTile(
              title: "Notes",
-             leading: Icon(Icons.home),
+             leading: const Icon(Icons.home),
              onTap: () => Navigator.pop(context)
          ),
           DrawerTile(
               title: "Settings",
-              leading: Icon(Icons.settings),
+              leading: const Icon(Icons.settings),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Settings()));
+                    MaterialPageRoute(builder: (context) => const Settings()));
               }
           ),
         ],

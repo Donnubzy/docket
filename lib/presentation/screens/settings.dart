@@ -21,8 +21,8 @@ class Settings extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(12)
         ),
-        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
-        margin: EdgeInsets.only(left: 25, right: 25, top: 10),
+        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+        margin: const EdgeInsets.only(left: 25, right: 25, top: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

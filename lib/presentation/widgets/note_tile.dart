@@ -15,7 +15,7 @@ class NoteTile extends StatelessWidget {
         color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(8)
       ),
-      margin: EdgeInsets.only(top: 10, left: 25, right: 25),
+      margin: const EdgeInsets.only(top: 10, left: 25, right: 25),
       child: ListTile(
         title: Text(text),
         trailing: Row(
@@ -23,11 +23,11 @@ class NoteTile extends StatelessWidget {
           children: [
             IconButton(
                 onPressed: onUpdate,
-                icon: Icon(Icons.edit)
+                icon: const Icon(Icons.edit)
             ),
             IconButton(
                 onPressed: onDelete,
-                icon: Icon(Icons.delete)
+                icon: const Icon(Icons.delete)
             ),
           ],
         ),

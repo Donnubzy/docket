@@ -21,7 +21,7 @@ class _NotesHomeState extends State<NotesHome> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text("Create New Note"),
+            title: const Text("Create New Note"),
             content: TextField(
               controller: noteController,
             ),
@@ -29,7 +29,7 @@ class _NotesHomeState extends State<NotesHome> {
             actions: [
               OutlinedButton(
                   onPressed: ()=> Navigator.pop(context),
-                  child: Text("Cancel")
+                  child: const Text("Cancel")
               ),
               ElevatedButton(
                   onPressed: (){
@@ -37,7 +37,7 @@ class _NotesHomeState extends State<NotesHome> {
                     noteController.clear();
                     Navigator.pop(context);
                   },
-                  child: Text("Save")
+                  child: const Text("Save")
               )
             ],
           );
@@ -55,7 +55,7 @@ class _NotesHomeState extends State<NotesHome> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text("Update Note"),
+            title: const Text("Update Note"),
             content: TextField(
               controller: noteController,
             ),
@@ -63,7 +63,7 @@ class _NotesHomeState extends State<NotesHome> {
             actions: [
               OutlinedButton(
                   onPressed: ()=> Navigator.pop(context),
-                  child: Text("Cancel")
+                  child: const Text("Cancel")
               ),
               ElevatedButton(
                   onPressed: (){
@@ -72,7 +72,7 @@ class _NotesHomeState extends State<NotesHome> {
                     noteController.clear();
                     Navigator.pop(context);
                   },
-                  child: Text("Update")
+                  child: const Text("Update")
               )
             ],
           );
@@ -110,7 +110,7 @@ class _NotesHomeState extends State<NotesHome> {
         ),
       ),
       backgroundColor: Theme.of(context).colorScheme.surface,
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
